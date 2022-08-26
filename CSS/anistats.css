@@ -216,4 +216,66 @@ main .section-container .container .item-container .posfirst {
   flex: 0 0 100%;
   display: flex;
   justify-content: center;
+}
+main .section-container .container .series-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .section-container .container .series-container .series {
+  position: relative;
+  height: 360px;
+  width: 220px;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 25px;
+  background: #A49393;
+  outline: 3px solid #67595E;
+  transition: all 0.25s ease;
+  cursor: pointer;
+}
+main .section-container .container .series-container .series .series-img-container {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 200px;
+  border-radius: 15px;
+  overflow: hidden;
+  outline: 5px solid white;
+}
+main .section-container .container .series-container .series .series-img-container .series-img {
+  height: 300px;
+  opacity: 50%;
+  transition: all 0.25s ease;
+}
+main .section-container .container .series-container .series .series-img-container .series-img:hover {
+  opacity: 100%;
+  transition: all 0.25s ease;
+}
+main .section-container .container .series-container .series .series-name {
+  cursor: pointer;
+  font-size: 1.6rem;
+  line-height: 3.3rem;
+}
+main .section-container .container .series-container .series .fav-series {
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  font-size: 2rem;
+  line-height: 3.7rem;
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #67595E;
+  color: red;
+  top: -23px;
+  right: -20px;
+  outline: 5px solid white;
+  transition: all 0.25s ease;
+}
+main .section-container .container .series-container .series:hover {
+  transform: scale(1.025);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+  transition: all 0.25s ease;
 }/*# sourceMappingURL=anistats.css.map */
