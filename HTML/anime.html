@@ -15,8 +15,8 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $(function(){
-              $("#nav-placeholder").load("subpage-nav.html");
+            $.get("subpage-nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
             });
         </script>
         <nav role="sub">

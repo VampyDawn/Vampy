@@ -14,8 +14,8 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $(function(){
-              $("#nav-placeholder").load("series-nav.html");
+            $.get("series-nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
             });
         </script>
         <nav role="sub">
