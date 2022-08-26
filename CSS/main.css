@@ -55,7 +55,6 @@ a {
 
 main {
   background: #E8B4B8;
-  min-height: 100vh;
   margin-left: 225px;
   margin-top: 60px;
   position: relative;
@@ -66,7 +65,7 @@ main .background-img-container {
   overflow: hidden;
 }
 main .background-img-container .background-img {
-  height: 100vh;
+  height: calc(100vh - 60px);
   opacity: 40%;
 }
 main .main-content {

@@ -1,0 +1,249 @@
+@import "initial";
+
+main {
+    background: $colorSecondary;
+    min-height: calc(100vh - 60px);
+    margin-left: 225px;
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    .main-title {
+        font-size: 5rem;
+        margin-bottom: -50px;
+    }
+    .section-container {
+        padding-top: 30px;
+        .container {
+            padding: 20px;
+            background: $colorSecondaryLight;
+            margin-top: 30px;
+            .sub-title {
+                font-size: 4rem;
+                margin: 20px 0px;
+                color: $colorPrimary;
+                text-decoration: overline;
+            }
+            .top-cards {
+                display: flex;
+                justify-content: space-evenly;
+                .card-container {
+                    position: relative;
+                    margin: 10px;
+                    padding: 20px;
+                    transition: $transitionFast;
+                    .char-img {
+                        display: flex;
+                        justify-content: center;
+                        overflow: hidden;
+                        border-radius: 15px;
+                        height: 400px;
+                        outline: 5px solid white;
+                        transition: $transitionFast;
+                        img {
+                            transform: scale(1.15);
+                        }
+                        &:hover {
+                            outline: 5px solid $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                    .card-name {
+                        position: absolute;
+                        background: $colorPrimaryLight;
+                        color: $colorSecondary;
+                        bottom: -10px;
+                        left: 8.75%;
+                        right: 8.75%;
+                        padding: 10px;
+                        font-size: 1.8rem;
+                        border-radius: 25px;
+                        outline: 5px solid white;
+                        transform: scale(0.9);
+                        transition: $transitionFast;
+                        &:hover {
+                            transform: scale(1);
+                            outline: 5px solid $colorPrimary;
+                            box-shadow: inset 0 0 10px $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                    .card-tier {
+                        position: absolute;
+                        background: $colorPrimaryLight;
+                        color: $colorSecondary;
+                        top: 60px;
+                        left: -10px;
+                        width: 60px;
+                        height: 60px;
+                        font-size: 2rem;
+                        line-height: 4rem;
+                        border-radius: 50%;
+                        outline: 5px solid white;
+                        transition: $transitionFast;
+                        &:hover {
+                            transform: scale(1.1);
+                            outline: 5px solid $colorPrimary;
+                            box-shadow: inset 0 0 10px $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                    .card-type {
+                        position: absolute;
+                        background: $colorPrimaryLight;
+                        color: $colorSecondary;
+                        outline: 5px solid white;
+                        transition: $transitionFast;
+                        border-radius: 25px;
+                        padding: 10px;
+                        left: -5px;
+                        bottom: 45px;
+                        &:hover {
+                            transform: scale(1.1);
+                            outline: 5px solid $colorPrimary;
+                            box-shadow: inset 0 0 10px $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                    .card-enh {
+                        position: absolute;
+                        background: $colorPrimaryLight;
+                        color: $colorSecondary;
+                        outline: 5px solid white;
+                        transition: $transitionFast;
+                        border-radius: 50%;
+                        padding: 10px;
+                        top: 110px;
+                        right: -10px;
+                        &:hover {
+                            transform: scale(1.1);
+                            outline: 5px solid $colorPrimary;
+                            box-shadow: inset 0 0 10px $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                    .card-affection {
+                        position: absolute;
+                        background: $colorPrimaryLight;
+                        color: $colorSecondary;
+                        outline: 5px solid white;
+                        padding: 10px;
+                        border-radius: 25px;
+                        right: -33px;
+                        bottom: 120px;
+                        transition: $transitionFast;
+                        &:hover {
+                            transform: scale(1.1);
+                            outline: 5px solid $colorPrimary;
+                            box-shadow: inset 0 0 10px $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                }
+            }
+            .looking-for {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                .entry {
+                    &:first-child {
+                        border-bottom: 5px solid white;
+                        .entry-priority {
+                            border-radius: 25px 0 0 0;
+                        }
+                        .entry-rarity {
+                            border-radius: 0 25px 0 0;
+                        }
+                    }
+                    &:last-child {
+                        .entry-priority {
+                            border-radius: 0 0 0 25px;
+                        }
+                        .entry-rarity {
+                            border-radius: 0 0 25px 0;
+                        }
+                    }
+                }
+                .entry {
+                    display: flex;
+                    h2 {
+                        font-size: 2rem;
+                    }
+                    div {
+                        padding: 5px 10px;
+                        height: 60px;
+                    }
+                    .entry-priority {
+                        width: 60px;
+                        background: $colorPrimary;
+                    }
+                    .entry-icon {
+                        background: $colorPrimaryLight;
+                        display: flex;
+                        justify-content: center;
+                        width: 65px;
+                        img {
+                            height: 100%;
+                        }
+                    }
+                    .entry-char {
+                        width: 317.9px;
+                        background: $colorPrimary;
+                    }
+                    .entry-char-id {
+                        width: 110px;
+                        background: $colorPrimaryLight;
+                    }
+                    .entry-series {
+                        width: 317.9px;
+                        background: $colorPrimary;
+                    }
+                    .entry-series-id {
+                        width: 95px;
+                        background: $colorPrimaryLight;
+                    }
+                    .entry-rarity {
+                        display: flex;
+                        width: 250px;
+                        background: $colorPrimary;
+                        display: flex;
+                        justify-content: center;
+                        h2 {
+                            margin: 0 5px;
+                            position: relative;
+                            &.nope {
+                                &::after {
+                                    content: "X";
+                                    color: red;
+                                    position: absolute;
+                                    top: 0;
+                                    bottom: 0;
+                                    left: 0;
+                                    right: 0;
+                                    font-size: 3rem;
+                                    line-height: 3rem;
+                                }
+                            }
+                        }
+                    }
+                    &:hover {
+                        border: 5px solid white;
+                    }
+                    &:last-child {
+                        &:hover {
+                            border: 5px solid white;
+                            border-radius: 0 0 25px 25px;
+                        }
+                    }
+                    &:first-child {
+                        &:hover {
+                            border: 0px solid white;
+                            border-bottom: 5px solid white;
+                            border-radius: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
