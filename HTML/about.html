@@ -15,10 +15,10 @@
     <body>
         <div id="nav-placeholder"></div>
         <script>
-            $.get("nav.html", function(data){
-                $("#nav-placeholder").replaceWith(data);
+            $(function(){
+              $("#nav-placeholder").load("nav.html");
             });
-        </script>
+            </script>
         <nav role="sub">
             <h1 class="logo"><a href="../index.html">Vampy</a></h1>
         </nav>
