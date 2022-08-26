@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background: #E8B4B8;
+  min-height: calc(100vh - 60px);
+  margin-left: 225px;
+  margin-top: 60px;
+  position: relative;
+  text-align: center;
+}
+main .title {
+  font-size: 5rem;
+  margin-bottom: -50px;
+}
+main .section-container {
+  padding: 20px;
+  background: #EED6D3;
+  margin-top: 30px;
+}
+main .section-container .sub-title {
+  font-size: 3.5rem;
+  margin: 20px 0px;
+  color: #67595E;
+  text-decoration: overline;
+}
+main .section-container .sub-sub-title {
+  color: #67595E;
+}
+main .section-container .info-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main .section-container .info-container .info {
+  padding: 10px;
+  margin: 5px;
+  width: 30%;
+  font-size: 2rem;
+  text-shadow: 0 0 2px rgba(0, 0, 0, 0.4);
+  color: #A49393;
+}
+main .section-container .info-container .info i {
+  font-size: 3rem;
+}
+main .section-container .info-container .info p {
+  font-size: 1rem;
+  margin: 0;
+  margin-top: -10px;
+}
+main .section-container .info-container .info p:hover {
+  color: #67595E;
+}
+main .section-container .info-container .info:hover {
+  color: #67595E;
+}
+main .section-container p {
+  margin-top: 30px;
+  padding: 10px;
+  color: #A49393;
+  font-size: 2rem;
+  line-height: 2rem;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.4);
+}
+main .section-container p strong {
+  font-weight: 400;
+  transition: all 0.25s ease;
+}
+main .section-container p strong:hover {
+  font-size: 2.05rem;
+  color: #67595E;
+  transition: all 0.25s ease;
+}
+main #main-info, main #hobbies, main #personality {
+  padding-top: 30px;
+}
+main #personality .personality-percent-container {
+  margin: 10px;
+  padding: 10px;
+}
+main #personality .personality-percent-container .bar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin: 10px 30px;
+}
+main #personality .personality-percent-container .bar-container .bar-titles {
+  display: flex;
+  justify-content: space-between;
+  width: 800px;
+}
+main #personality .personality-percent-container .bar-container .bar-titles .bar-title {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #A49393;
+}
+main #personality .personality-percent-container .bar-container .bar-titles .bar-title:hover {
+  color: #67595E;
+}
+main #personality .personality-percent-container .bar-container .personality-bar {
+  height: 30px;
+  width: 800px;
+  background: #A49393;
+  border-radius: 25px;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress {
+  height: 30px;
+  background: #E8B4B8;
+  border-radius: 25px;
+  color: #67595E;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress.introverted {
+  width: 93%;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress.observant {
+  width: 67%;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress.feeling {
+  width: 60%;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress.prospecting {
+  width: 54%;
+}
+main #personality .personality-percent-container .bar-container .personality-bar .progress.turbulent {
+  width: 76%;
+}/*# sourceMappingURL=about.css.map */

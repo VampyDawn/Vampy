@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <title>Vampy Ramen</title>
+        <link rel="stylesheet" href="../CSS/nav.css">
+        <link rel="stylesheet" href="../CSS/about.css">
+        <script src="https://kit.fontawesome.com/7873a3b270.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="nav-placeholder"></div>
+        <script>
+            $.get("nav.html", function(data){
+                $("#nav-placeholder").replaceWith(data);
+            });
+        </script>
+        <nav role="sub">
+            <h1 class="logo"><a href="../index.html">Vampy</a></h1>
+        </nav>
+        <main>
+            <h1 class="title">About Me</h1>
+            <div id="main-info">
+                <div class="section-container">
+                    <h2 class="sub-title">Main Info</h2>
+                    <div class="info-container">
+                        <h3 class="info"><i class="fa-solid fa-calendar-day dob"></i> 01 / 01 / 2000</h3>
+                        <h3 class="info"><i class="fa-solid fa-ruler-vertical height"></i> 5'0 ( 153cm )</h3>
+                        <h3 class="info"><i class="fa-solid fa-venus gender"></i> Female </h3>
+                        <h3 class="info"><i class="fa-solid fa-earth-europe nationality"></i> British</h3>
+                        <h3 class="info"><i class="fa-solid fa-mars-and-venus sexuality"></i> Demi / Bi</h3>
+                    </div>
+                    <p> <strong>Hai, my name is Sophie Dawn Twilight, but I go by Vampy.</strong> 
+                        <strong>I'm a 5'0 tall girl from England. </strong>
+                        <strong>I was born on the 1st of January, 2000. </strong>
+                        <strong>I'm demi/bi, which basically means I'm only attracted to people I have a strong emotional bond with regardless of their gender.</strong></p>
+                </div>
+            </div>
+            <div id="hobbies">
+                <div class="section-container">
+                    <h2 class="sub-title">Hobbies</h2>
+                    <div class="info-container">
+                        <h3 class="info"><i class="fa-solid fa-utensils"></i> Cooking <p>since 2009</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-cookie"></i> Baking <p>since 2009</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-dice-d20"></i> DnD <p>since 2014</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-person-walking-arrow-loop-left"></i> Flexiblity Exercise <p>since 2015</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-book-open"></i> Animanga <p>since 2016</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-book"></i> Light Novels <p>since 2018</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-object-group"></i> Design <p>since 2019</p></h3>
+                        <h3 class="info"><i class="fa-solid fa-code"></i> Coding <p>since 2021</p></h3>
+                    </div>
+                    <p> <strong>I started cooking when I was 9. </strong>
+                        <strong>By the time I was 14 I was already cooking all the food for my family. </strong>
+                        <strong>When I was 14 I started playing DnD, around the time 5e came out. </strong>
+                        <strong>Since I was naturally flexible I've been doing flexiblity exercises since I was 15. </strong>
+                        <strong>I've been watching anime and reading manga since I was 16. </strong>
+                        <strong>And I started reading light novels when I was 18 as I ran out of stuff to watch. </strong>
+                        <strong>I started messing around in photoshop and after effects when I was 19 cause I was bored. </strong>
+                        <strong>Then when I was 21 I started coding as I wanted to customise a profile using CSS.</strong></p>
+                </div>
+            </div>
+            <div id="personality">
+                <div class="section-container">
+                    <h2 class="sub-title">Personality</h2>
+                    <h3 class="sub-sub-title">ISFP-T</h3>
+                    <div class="personality-percent-container">
+                        <div class="bar-container">
+                            <div class="bar-titles">
+                                <h3 class="bar-title">Introverted</h3>
+                                <h3 class="bar-title">Extroverted</h3>
+                            </div>
+                            <div class="personality-bar">
+                                <div class="progress introverted">93%</div>
+                            </div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar-titles">
+                                <h3 class="bar-title">Observant</h3>
+                                <h3 class="bar-title">Intuitive</h3>
+                            </div>
+                            <div class="personality-bar">
+                                <div class="progress observant">67%</div>
+                            </div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar-titles">
+                                <h3 class="bar-title">Feeling</h3>
+                                <h3 class="bar-title">Thinking</h3>
+                            </div>
+                            <div class="personality-bar">
+                                <div class="progress feeling">60%</div>
+                            </div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar-titles">
+                                <h3 class="bar-title">Prospecting</h3>
+                                <h3 class="bar-title">Judging</h3>
+                            </div>
+                            <div class="personality-bar">
+                                <div class="progress prospecting">54%</div>
+                            </div>
+                        </div>
+                        <div class="bar-container">
+                            <div class="bar-titles">
+                                <h3 class="bar-title">Turbulent</h3>
+                                <h3 class="bar-title">Assertive</h3>
+                            </div>
+                            <div class="personality-bar">
+                                <div class="progress turbulent">76%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+@import "initial";
+
+main {
+    background: $colorSecondary;
+    min-height: 100vh;
+    margin-left: 225px;
+    margin-top: 60px;
+    position: relative;
+    .background-img-container {
+        display: flex;
+        justify-content: center;
+        overflow: hidden;
+        .background-img {
+            height: 100vh;
+            opacity: 40%;
+        }
+    }
+    .main-content  {
+        position: absolute;
+        right: calc(25% - 150px);
+        top: calc(50% - 150px);
+        padding: 10px;
+        text-align: center;
+        .name {
+            font-size: 5rem;
+            padding: 10px;
+        }
+        .desc {
+            font-size: 1rem;
+        }
+    }
+}

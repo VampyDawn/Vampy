@@ -1,0 +1,170 @@
+@import "initial";
+
+$totalSeries: 503;
+
+main {
+    background: $colorSecondary;
+    min-height: calc(100vh - 60px);
+    margin-left: 225px;
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    .main-title {
+        font-size: 5rem;
+        margin-bottom: -50px;
+    }
+    .section-container {
+        padding-top: 30px;
+        .container {
+            padding: 20px;
+            background: $colorSecondaryLight;
+            margin-top: 30px;
+            .sub-title {
+                font-size: 4rem;
+                margin: 20px 0px;
+                color: $colorPrimary;
+                text-decoration: overline;
+            }
+            .category-name {
+                color: $colorPrimary;
+                font-size: 3.5rem;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                text-decoration: underline;
+            }
+            .disclaimer {
+                margin-bottom: 25px;
+                color: $colorPrimaryLight;
+            }
+            .stat-container {
+                display: flex;
+                justify-content: space-evenly;
+                .stat-block {
+                    display: flex;
+                    flex-direction: column;
+                    .stat {
+                        font-size: 3rem;
+                        font-weight: 600;
+                        color: $colorPrimaryLight;
+                        transition: $transitionFast;
+                    }
+                    .stat-title {
+                        font-size: 2rem;
+                        color: $colorPrimaryLight;
+                        transition: $transitionFast;
+                    }
+                    &:hover {
+                        .stat {
+                            transform: scale(1.1);
+                            color: $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                        .stat-title {
+                            transform: scale(1.025);
+                            color: $colorPrimary;
+                            transition: $transitionFast;
+                        }
+                    }
+                }
+            }
+            .item-container {
+                display: flex;
+                justify-content: space-evenly;
+                flex-wrap: wrap;
+                .category-container {
+                    position: relative;
+                    width: 300px;
+                    height: 100px;
+                    padding: 10px;
+                    margin: 15px 5px;
+                    border-radius: 25px;
+                    background: $colorPrimaryLight;
+                    transition: $transitionFast;
+                    &.posfirst {
+                        display: block;
+                        flex: none;
+                        transform: scale(1.2);
+                        margin-bottom: 25px;
+                        &:hover {
+                            transform: scale(1.3);
+                        }
+                    }
+                    .position {
+                        position: absolute;
+                        display: flex;
+                        font-size: 1.5rem;
+                        line-height: 3rem;
+                        height: 50px;
+                        width: 50px;
+                        border-radius: 50%;
+                        justify-content: center;
+                        background-color: $colorPrimary;
+                        top: -20px;
+                        left: -15px;
+                        transition: $transitionFast;
+                    }
+                    .fav-category {
+                        position: absolute;
+                        display: flex;
+                        font-size: 1.5rem;
+                        line-height: 2.5rem;
+                        height: 40px;
+                        width: 40px;
+                        border-radius: 50%;
+                        justify-content: center;
+                        background-color: $colorPrimary;
+                        color: red;
+                        top: -10px;
+                        right: -8px;
+                        transition: $transitionFast;
+                    }
+                    .value {
+                        font-size: 2rem;
+                        strong {
+                            font-size: 1.5rem;
+                        }
+                        &.tags {
+                            font-size: 1.5rem;
+                            margin-top: 10px;
+                            strong {
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                    .bar-container {
+                        background-color: gray;
+                        height: 30px;
+                        width: 280px;
+                        border-radius: 25px;
+                        position: absolute;
+                        bottom: 10px;
+                        .bar {
+                            background-color: white;
+                            height: 30px;
+                            border-radius: 25px;
+                        }
+                    }
+                    &:hover {
+                        transform: scale(1.05);
+                        box-shadow: $shadowMedium;
+                        transition: $transitionFast;
+                        .position {
+                            transform: scale(1.1);
+                            transition: $transitionFast;
+                        }
+                        .fav-category {
+                            font-size: 26.4px;
+                            transform: scale(1.1);
+                            transition: $transitionFast;
+                        }
+                    }
+                }
+                .posfirst {
+                    flex: 0 0 100%;
+                    display: flex;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

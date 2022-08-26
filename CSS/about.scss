@@ -1,0 +1,132 @@
+@import "initial";
+
+main {
+    background: $colorSecondary;
+    min-height: calc(100vh - 60px);
+    margin-left: 225px;
+    margin-top: 60px;
+    position: relative;
+    text-align: center;
+    .title {
+        font-size: 5rem;
+        margin-bottom: -50px;
+    }
+    .section-container {
+        padding: 20px;
+        background: $colorSecondaryLight;
+        margin-top: 30px;
+        .sub-title {
+            font-size: 3.5rem;
+            margin: 20px 0px;
+            color: $colorPrimary;
+            text-decoration: overline;
+        }
+        .sub-sub-title {
+            color: $colorPrimary;
+        }
+        .info-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            .info {
+                padding: 10px;
+                margin: 5px;
+                width: 30%;
+                font-size: 2rem;
+                text-shadow: 0 0 2px $shadowMedium;
+                color: $colorPrimaryLight;
+                i {
+                    font-size: 3rem;
+                }
+                p {
+                    font-size: 1rem;
+                    margin: 0;
+                    margin-top: -10px;
+                    &:hover {
+                        color: $colorPrimary;
+                    }
+                }
+                &:hover {
+                    color: $colorPrimary;
+                }
+            }
+        }
+        p {
+            margin-top: 30px;
+            padding: 10px;
+            color: $colorPrimaryLight;
+            font-size: 2rem;
+            line-height: 2rem;
+            text-shadow: 0 0 1px $shadowMedium;
+            strong {
+                font-weight: 400;
+                transition: $transitionFast;
+                &:hover {
+                    font-size: 2.05rem;
+                    color: $colorPrimary;
+                    transition: $transitionFast;
+                }
+            }
+        }
+    }
+    #main-info, #hobbies, #personality {
+        padding-top: 30px;
+    }
+    #personality {
+        .personality-percent-container {
+            margin: 10px;
+            padding: 10px;
+            .bar-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 20px;
+                margin: 10px 30px;
+                .bar-titles {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 800px;
+                    .bar-title {
+                        font-size: 2rem;
+                        font-weight: 600;
+                        color: $colorPrimaryLight;
+                        &:hover {
+                            color: $colorPrimary;
+                        }
+                    }
+                }
+                .personality-bar {
+                    height: 30px;
+                    width: 800px;
+                    background: $colorPrimaryLight;
+                    border-radius: 25px;
+                    .progress {
+                        height: 30px;
+                        background: $colorSecondary;
+                        border-radius: 25px;
+                        color: $colorPrimary;
+                        line-height: 2rem;
+                        font-size: 1.25rem;
+                        font-weight: 600;
+                        &.introverted {
+                            width: 93%;
+                        }
+                        &.observant {
+                            width: 67%;
+                        }
+                        &.feeling {
+                            width: 60%;
+                        }
+                        &.prospecting {
+                            width: 54%;
+                        }
+                        &.turbulent {
+                            width: 76%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

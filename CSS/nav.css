@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+nav {
+  position: fixed;
+  background: #67595E;
+  z-index: 10;
+}
+nav[role=main] {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 225px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+nav[role=main] .nav {
+  margin: 20px 0;
+  text-align: center;
+}
+nav[role=main] .nav li {
+  margin-bottom: 20px;
+}
+nav[role=main] .nav li a {
+  font-size: 1.5rem;
+  padding: 20px;
+  line-height: 1.6rem;
+  transition: all 0.25s ease;
+}
+nav[role=main] .nav li a:hover {
+  font-size: 1.75rem;
+  line-height: 1.6rem;
+  background: #A49393;
+  transition: all 0.25s ease;
+}
+nav[role=main] .nav li nav[role=sub] {
+  visibility: hidden;
+  opacity: 0%;
+  position: fixed;
+  left: 225px;
+  top: 60px;
+  width: 0px;
+  height: calc(100% - 60px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.1s ease;
+}
+nav[role=main] .nav li nav[role=sub] a {
+  word-wrap: none;
+}
+nav[role=main] .nav li nav[role=sub] li:hover nav[role=subsub] {
+  visibility: visible;
+  width: 250px;
+  opacity: 100%;
+  transition: all 0.5s ease;
+}
+nav[role=main] .nav li nav[role=subsub] {
+  visibility: hidden;
+  opacity: 0%;
+  position: fixed;
+  left: 475px;
+  top: 60px;
+  width: 0px;
+  height: calc(100% - 60px);
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.1s ease;
+}
+nav[role=main] .nav li:hover nav[role=sub] {
+  visibility: visible;
+  width: 250px;
+  opacity: 100%;
+  transition: all 0.5s ease;
+}
+nav[role=sub] {
+  top: 0;
+  height: 60px;
+  width: 100%;
+  box-shadow: 100px 0 25px rgba(0, 0, 0, 0.6);
+}
+nav[role=sub] .logo {
+  text-align: center;
+  padding-left: 200px;
+}/*# sourceMappingURL=nav.css.map */

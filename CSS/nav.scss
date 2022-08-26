@@ -1,0 +1,95 @@
+@import "initial";
+
+nav {
+    position: fixed;
+    background: $colorPrimary;
+    z-index: 10;
+    &[role="main"] {
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 225px;
+        box-shadow: 0 0 25px $shadowDark;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        .nav {
+            margin: 20px 0;
+            text-align: center;
+            li {
+                margin-bottom: 20px;
+                a {
+                    font-size: 1.5rem;
+                    padding: 20px;
+                    line-height: 1.6rem;
+                    transition: $transitionFast;
+                    &:hover {
+                        font-size: 1.75rem;
+                        line-height: 1.6rem;
+                        background: $colorPrimaryLight;
+                        transition: $transitionFast;
+                    }
+                }
+                nav[role="sub"] {
+                    visibility: hidden;
+                    opacity: 0%;
+                    position: fixed;
+                    left: 225px;
+                    top: 60px;
+                    width: 0px;
+                    height: calc(100% - 60px);
+                    box-shadow: 0 0 25px $shadowDark;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transition: $transitionSuperFast;
+                    a {
+                        word-wrap: none;
+                    }
+                    li {
+                        &:hover {
+                            nav[role="subsub"] {
+                                visibility: visible;
+                                width: 250px;
+                                opacity: 100%;
+                                transition: $transitionMedium;
+                            }
+                        }
+                    }
+                }
+                nav[role="subsub"] {
+                    visibility: hidden;
+                    opacity: 0%;
+                    position: fixed;
+                    left: 475px;
+                    top: 60px;
+                    width: 0px;
+                    height: calc(100% - 60px);
+                    box-shadow: 0 0 25px $shadowDark;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transition: $transitionSuperFast;
+                }
+                &:hover {
+                    nav[role="sub"] {
+                        visibility: visible;
+                        width: 250px;
+                        opacity: 100%;
+                        transition: $transitionMedium;
+                    }
+                }
+            }
+        } 
+    }
+    &[role="sub"] {
+        top: 0;
+        height: 60px;
+        width: 100%;
+        box-shadow: 100px 0 25px $shadowDark;
+        .logo {
+            text-align: center;
+            padding-left: 200px;
+        }
+    }
+}

@@ -1,0 +1,219 @@
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h2 {
+  font-size: 2rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+h3 {
+  font-size: 1.5rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+p {
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+  color: white;
+  cursor: default;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  padding: 0;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  background: #E8B4B8;
+  min-height: calc(100vh - 60px);
+  margin-left: 225px;
+  margin-top: 60px;
+  position: relative;
+  text-align: center;
+}
+main .main-title {
+  font-size: 5rem;
+  margin-bottom: -50px;
+}
+main .section-container {
+  padding-top: 30px;
+}
+main .section-container .container {
+  padding: 20px;
+  background: #EED6D3;
+  margin-top: 30px;
+}
+main .section-container .container .sub-title {
+  font-size: 4rem;
+  margin: 20px 0px;
+  color: #67595E;
+  text-decoration: overline;
+}
+main .section-container .container .category-name {
+  color: #67595E;
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-decoration: underline;
+}
+main .section-container .container .disclaimer {
+  margin-bottom: 25px;
+  color: #A49393;
+}
+main .section-container .container .stat-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+main .section-container .container .stat-container .stat-block {
+  display: flex;
+  flex-direction: column;
+}
+main .section-container .container .stat-container .stat-block .stat {
+  font-size: 3rem;
+  font-weight: 600;
+  color: #A49393;
+  transition: all 0.25s ease;
+}
+main .section-container .container .stat-container .stat-block .stat-title {
+  font-size: 2rem;
+  color: #A49393;
+  transition: all 0.25s ease;
+}
+main .section-container .container .stat-container .stat-block:hover .stat {
+  transform: scale(1.1);
+  color: #67595E;
+  transition: all 0.25s ease;
+}
+main .section-container .container .stat-container .stat-block:hover .stat-title {
+  transform: scale(1.025);
+  color: #67595E;
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+main .section-container .container .item-container .category-container {
+  position: relative;
+  width: 300px;
+  height: 100px;
+  padding: 10px;
+  margin: 15px 5px;
+  border-radius: 25px;
+  background: #A49393;
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .category-container.posfirst {
+  display: block;
+  flex: none;
+  transform: scale(1.2);
+  margin-bottom: 25px;
+}
+main .section-container .container .item-container .category-container.posfirst:hover {
+  transform: scale(1.3);
+}
+main .section-container .container .item-container .category-container .position {
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #67595E;
+  top: -20px;
+  left: -15px;
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .category-container .fav-category {
+  position: absolute;
+  display: flex;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  background-color: #67595E;
+  color: red;
+  top: -10px;
+  right: -8px;
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .category-container .value {
+  font-size: 2rem;
+}
+main .section-container .container .item-container .category-container .value strong {
+  font-size: 1.5rem;
+}
+main .section-container .container .item-container .category-container .value.tags {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+main .section-container .container .item-container .category-container .value.tags strong {
+  font-size: 1.1rem;
+}
+main .section-container .container .item-container .category-container .bar-container {
+  background-color: gray;
+  height: 30px;
+  width: 280px;
+  border-radius: 25px;
+  position: absolute;
+  bottom: 10px;
+}
+main .section-container .container .item-container .category-container .bar-container .bar {
+  background-color: white;
+  height: 30px;
+  border-radius: 25px;
+}
+main .section-container .container .item-container .category-container:hover {
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.4);
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .category-container:hover .position {
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .category-container:hover .fav-category {
+  font-size: 26.4px;
+  transform: scale(1.1);
+  transition: all 0.25s ease;
+}
+main .section-container .container .item-container .posfirst {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=anistats.css.map */
