@@ -219,6 +219,7 @@ main .section-container .container .looking-for .entry:last-child .entry-rarity 
 }
 main .section-container .container .looking-for .entry {
   display: flex;
+  position: relative;
 }
 main .section-container .container .looking-for .entry h2 {
   font-size: 2rem;
@@ -227,34 +228,75 @@ main .section-container .container .looking-for .entry div {
   padding: 5px 10px;
   height: 60px;
 }
+main .section-container .container .looking-for .entry .char-full-img, main .section-container .container .looking-for .entry .series-full-img {
+  position: absolute;
+  bottom: 75px;
+  background: #E8B4B8;
+  padding: 10px;
+  height: 320px;
+  outline: 1px solid white;
+}
+main .section-container .container .looking-for .entry .char-full-img img, main .section-container .container .looking-for .entry .series-full-img img {
+  height: 300px;
+}
 main .section-container .container .looking-for .entry .entry-priority {
   width: 60px;
   background: #67595E;
 }
-main .section-container .container .looking-for .entry .entry-icon {
+main .section-container .container .looking-for .entry .entry-char-container {
+  display: flex;
+  padding: 0;
+}
+main .section-container .container .looking-for .entry .entry-char-container .char-full-img {
+  left: 200px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+main .section-container .container .looking-for .entry .entry-char-container .entry-icon {
   background: #A49393;
   display: flex;
   justify-content: center;
   width: 65px;
 }
-main .section-container .container .looking-for .entry .entry-icon img {
+main .section-container .container .looking-for .entry .entry-char-container .entry-icon img {
   height: 100%;
 }
-main .section-container .container .looking-for .entry .entry-char {
+main .section-container .container .looking-for .entry .entry-char-container .entry-char {
   width: 317.9px;
   background: #67595E;
 }
-main .section-container .container .looking-for .entry .entry-char-id {
+main .section-container .container .looking-for .entry .entry-char-container .entry-char-id {
   width: 110px;
   background: #A49393;
 }
-main .section-container .container .looking-for .entry .entry-series {
+main .section-container .container .looking-for .entry .entry-char-container:hover .char-full-img {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.25s ease;
+}
+main .section-container .container .looking-for .entry .entry-series-container {
+  display: flex;
+  padding: 0;
+}
+main .section-container .container .looking-for .entry .entry-series-container .series-full-img {
+  right: 315px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.25s ease;
+}
+main .section-container .container .looking-for .entry .entry-series-container .entry-series {
   width: 317.9px;
   background: #67595E;
 }
-main .section-container .container .looking-for .entry .entry-series-id {
+main .section-container .container .looking-for .entry .entry-series-container .entry-series-id {
   width: 95px;
   background: #A49393;
+}
+main .section-container .container .looking-for .entry .entry-series-container:hover .series-full-img {
+  visibility: visible;
+  opacity: 1;
+  transition: all 0.25s ease;
 }
 main .section-container .container .looking-for .entry .entry-rarity {
   display: flex;
@@ -279,14 +321,17 @@ main .section-container .container .looking-for .entry .entry-rarity h2.nope::af
   line-height: 3rem;
 }
 main .section-container .container .looking-for .entry:hover {
-  border: 5px solid white;
+  outline: 5px solid white;
+  z-index: 1;
 }
-main .section-container .container .looking-for .entry:last-child:hover {
-  border: 5px solid white;
+main .section-container .container .looking-for .entry:last-child {
   border-radius: 0 0 25px 25px;
 }
+main .section-container .container .looking-for .entry:last-child:hover {
+  outline: 5px solid white;
+}
 main .section-container .container .looking-for .entry:first-child:hover {
-  border: 0px solid white;
+  outline: 0px solid white;
   border-bottom: 5px solid white;
   border-radius: 0;
 }/*# sourceMappingURL=ramen.css.map */
