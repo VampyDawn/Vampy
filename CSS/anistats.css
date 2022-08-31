@@ -53,6 +53,97 @@ a {
   height: 100%;
 }
 
+.action {
+  background: #057e93 !important;
+}
+
+.adventure {
+  background: #005642 !important;
+}
+
+.comedy {
+  background: #ffbaac !important;
+}
+
+.drama {
+  background: #8f0000 !important;
+}
+
+.ecchi {
+  background: #7d1690 !important;
+}
+
+.fantasy {
+  background: #c6c781 !important;
+}
+
+.horror {
+  background: #750de4 !important;
+}
+
+.mahoushoujo {
+  background: #dd80b9 !important;
+}
+
+.mecha {
+  background: #603d74 !important;
+}
+
+.music {
+  background: #24e598 !important;
+}
+
+.mystery {
+  background: #69438c !important;
+}
+
+.psychological {
+  background: #db601e !important;
+}
+
+.romance {
+  background: #c31960 !important;
+}
+
+.sci-fi {
+  background: #90ed6c !important;
+}
+
+.sliceoflife {
+  background: #e9ce21 !important;
+}
+
+.sports {
+  background: #98c910 !important;
+}
+
+.supernatural {
+  background: #4de1ad !important;
+}
+
+.thriller {
+  background: #3361d6 !important;
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #A49393;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: #EED6D3;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: #E8B4B8;
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
 main {
   background: #E8B4B8;
   min-height: calc(100vh - 60px);

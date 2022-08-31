@@ -8,6 +8,28 @@ $shadowLight: rgba(0 0 0 / 20%);
 $transitionSuperFast: all .1s ease;
 $transitionFast: all .25s ease;
 $transitionMedium: all .5s ease;
+$transitionSlow: all 2s ease;
+
+$Action: #057e93;
+$Adventure: #005642;
+$Comedy: #ffbaac;
+$Drama: #8f0000;
+$Ecchi: #7d1690;
+$Fantasy: #c6c781;
+$Horror: #750de4;
+$MahouShoujo: #dd80b9;
+$Mecha: #603d74;
+$Music : #24e598;
+$Mystery: #69438c;
+$Psychological: #db601e;
+$Romance: #c31960;
+$Sci-Fi: #90ed6c;
+$SliceOfLife: #e9ce21;
+$Sports: #98c910;
+$Supernatural: #4de1ad;
+$Thriller: #3361d6;
+
+
 
 * {
     box-sizing: border-box;
@@ -62,4 +84,40 @@ a {
     display: block;
     width: 100%;
     height: 100%;
+}
+
+
+.action {background: $Action !important;}
+.adventure{background: $Adventure !important;}
+.comedy{background: $Comedy !important;}
+.drama{background: $Drama !important;}
+.ecchi{background: $Ecchi !important;}
+.fantasy{background: $Fantasy !important;}
+.horror{background: $Horror !important;}
+.mahoushoujo{background: $MahouShoujo !important;}
+.mecha{background: $Mecha !important;}
+.music{background: $Music !important;}
+.mystery{background: $Mystery !important;}
+.psychological{background: $Psychological !important;}
+.romance{background: $Romance !important;}
+.sci-fi{background: $Sci-Fi !important;}
+.sliceoflife{background: $SliceOfLife !important;}
+.sports{background: $Sports !important;}
+.supernatural{background: $Supernatural !important;}
+.thriller{background: $Thriller !important;}
+
+
+*::-webkit-scrollbar {
+    width: 10px;
+}
+*::-webkit-scrollbar-track {
+    background: $colorPrimaryLight;
+}
+*::-webkit-scrollbar-thumb {
+    background: $colorSecondaryLight;
+    transition: $transitionFast;
+    &:hover {
+        background: $colorSecondary;
+        transition: $transitionFast;
+    }
 }
